@@ -77,13 +77,11 @@ export default function CodeDocsForm({fetchFormData, updateForm, firstName}) {
         updateForm.edit = false
       }
       const person = useSelector((state) => state.auth.user)
-      // const user = person.firstName
 
   return (
     <Card sx={{ minWidth: 275, marginTop: 7 }}>
       <CardContent>
       <Typography sx={{ marginBottom: 2 }} variant="h6" color="text.secondary" gutterBottom>
-          {/* Welcome {user}, */}
           Welcome {person},
         </Typography>
         <Typography sx={{ marginBottom: 7 }} variant="h6" color="text.secondary" gutterBottom>
@@ -105,7 +103,7 @@ export default function CodeDocsForm({fetchFormData, updateForm, firstName}) {
             <TextField sx={{ marginRight: 5 }}
                  required
                 id="outlined-basic" 
-                label="description" 
+                label="code description" 
                 type = 'text'
                 variant="outlined"
                 name = 'description' 
@@ -122,7 +120,6 @@ export default function CodeDocsForm({fetchFormData, updateForm, firstName}) {
                     renderInput={(params) => <TextField sx={{ marginRight: 5 }} {...params} />}
                 />
             </LocalizationProvider>
-            {/* <Button variant="contained" type = 'submit'>Submit</Button> */}
 
             {updateForm.edit === true && (
             <Button type="submit" variant="contained">
