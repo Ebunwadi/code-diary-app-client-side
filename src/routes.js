@@ -3,6 +3,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Error from "./pages/ErrorPage";
 import CheckAuth from "./utils/CheckAuth";
 import Guest from "./utils/Guest";
 
@@ -32,6 +33,12 @@ export default createBrowserRouter([
           <Guest>
             <Register />
           </Guest>
+        ),
+      },
+      {
+        path: "/error",
+        element: (
+            <Error />
         ),
       },
     ],

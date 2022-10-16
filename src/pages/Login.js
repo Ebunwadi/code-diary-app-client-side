@@ -40,6 +40,8 @@ export default function SignIn() {
         Cookie.set("token", token);
         dispatch(setUser(user));
         navigate("/");        
+      }  else {
+        navigate('/error')
       }
   };
   return (
