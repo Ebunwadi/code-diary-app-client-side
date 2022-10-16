@@ -35,7 +35,7 @@ export default function SignUp() {
       if (res.ok) {
         navigate("/login");
       } else {
-        navigate('/error')
+        <RouterLink to="/error"></RouterLink>
       }
     };
 

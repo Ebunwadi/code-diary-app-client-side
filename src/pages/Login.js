@@ -41,7 +41,8 @@ export default function SignIn() {
         dispatch(setUser(user));
         navigate("/");        
       }  else {
-        navigate('/error')
+        <RouterLink to="/error"></RouterLink>
+        
       }
   };
   return (
