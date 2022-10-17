@@ -35,9 +35,9 @@ export default function SignUp() {
       if (res.ok) {
         navigate("/login");
       } else {
-        <RouterLink to="/error"></RouterLink>
+       navigate('/error')
       }
-    };
+    }
 
   return (
       <Container component="main" maxWidth="xs">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { purple } from '@mui/material/colors';
-import { Link as RouterLink, useNavigate} from "react-router-dom";
+import { Link as RouterLink} from "react-router-dom";
 import Link from '@mui/material/Link';
 
 
@@ -20,14 +20,18 @@ export default function Error() {
       }}
     >
       <Typography variant="h1" style={{ color: 'white' }}>
-        404
+        Oops!!!
       </Typography>
-      <Typography variant="h6" style={{ color: 'white' }}>
-        The page you’re looking for doesn’t exist.
+      <Typography variant="h3" style={{ color: 'white' }}>
+        something went wrong.
       </Typography>
+      
       <RouterLink to="/login">
         <Link component="span" variant="body2">
-            {"Back Home"}
+      <Typography variant="h6" style={{ color: 'white' }}>
+            
+            {"You can click here to go Back"}
+        </Typography>
         </Link>
         </RouterLink>
     </Box>
