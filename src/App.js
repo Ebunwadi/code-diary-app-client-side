@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   if (isLoading) {
-    return <p>Loading ...</p>;
+    return <p>Loading ... This may take a while depending on network. if it persists kindly refresh the page. Thanks</p>;
   }
 
   return (
